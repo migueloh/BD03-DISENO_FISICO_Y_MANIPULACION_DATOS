@@ -1,0 +1,11 @@
+
+Identificación de distintos SGBD comerciales: MySql, Oracle
+    
+    Diseño Físico con Oracle:
+
+        El entorno de trabajo de Oracle: SQL*PLus, iSql*Plus,SQL Developer
+        Tipos de sentencias SQL:
+
+            Sentencias DDL (Lenguaje de Definición de Datos): create, alter, drop, truncate
+            Sentencias DML (Lenguaje de Manipulacion de Datos): insert, update, delete.
+            Sentencias DCL (Lenguaje de Control de Datos): commit, rollback

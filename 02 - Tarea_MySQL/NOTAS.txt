@@ -1,0 +1,17 @@
+bajar scotch de aqui: https://github.com/scotch-io/scotch-box
+
+en nuestro usuario crear una carpeta llamada vagrant, dentro de esta carpeta meter el repositorio scotch
+y hacer vagrant up -- ojo buscar el vagrantfile de esa ruta
+
+
+vagrant ssh para comprobar 
+
+vagrant
+host 2222
+shh 127.0.0.1:2222
+
+ssh
+eth0 10.0.2.15
+eth1 192.168.33.10
+
+

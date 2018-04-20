@@ -1,0 +1,12 @@
+Restricciones tipo CHECK en MySQL
+Las restricciones semánticas en MySQL se suelen implementar mediante Triggers.
+ 
+Si la restricción de tipo CHECK es para forzar los posibles valores usaremos el tipo de dato ENUM.
+ 
+De forma más genérica, podemos forzar a que los valores de determinados campos de la tabla cumplan una ciertas condiciones. En caso contrario no se permitirá la inserción de esa fila en dicha tabla.
+nombre VARCHAR(250) CHECK (nombre = UPPER(nombre))
+edad INT CHECK (edad > 0)
+curso INT CHECK (curso BETWEEN 1 AND 2)
+Hay que tener en cuenta que en MySQL está restricción no tiene ningún efecto y lo habitual es definir una columna como de tipo enumeración (ENUM en MySQL) si queremos indicar que solamente una serie de valores (definidos) son válidos:
+curso ENUM ('0', '1', '2'),
+horario ENUM ('mañana', 'tarde', 'noche'),
